@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>App Home</h1>
+    {% if request.user.is_authenticated %}
+        <p>Welcome, {{ request.user.email }}!</p>
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        </form>
+        {% if request.user.is_superuser %}
+            <button onclick="location.href='{% url 'admin:index' %}'">Admin Page</button>
+        {% endif %}
+    {% else %}
+        <button onclick="location.href='{% url 'login' %}'">Login</button>
+        <button onclick="location.href='{% url 'register' %}'">Register</button>
+    {% endif %}
+    <button onclick="location.href='{% url 'profile' %}'">View Profile</button>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{% block content %}
+  <h1>User Centre</h1>
+  <p>Welcome, {{ user.first_name }}!</p>
+
+  <a href="{% url 'home' %}"><button type="button">Home</button></a>
+
+  <h2>Profile</h2>
+
+  <p>Email: {{ user.email }}</p>
+  <p>First Name: {{ user.first_name }}</p>
+  <p>Last Name: {{ user.last_name }}</p>
+  <p>Phone Number: {{ user.phone_number }}</p>
+
+  {% if user.profile_picture %}
+      <img src="{{ user.profile_picture.url }}" alt="Profile Picture">
+  {% else %}
+      <p>No profile picture</p>
+  {% endif %}
+
+  <h2>Editable Fields</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+  <p>
+    <form action="{% url 'profile' %}" method="get">
+      <input type="hidden" name="delete_profile_picture" value="True">
+      <button type="submit">Delete Profile Picture</button>
+  </form>
+  
+  <form action="{% url 'profile' %}" method="get">
+      <input type="hidden" name="delete_phone_number" value="True">
+      <button type="submit">Delete Phone Number</button>
+      
+  </p>
+  <form id="profile-form" method="post">
+    {% csrf_token %}
+  </form>
+{% endblock %}
