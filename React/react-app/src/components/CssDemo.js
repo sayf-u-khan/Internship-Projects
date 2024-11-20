@@ -1,5 +1,5 @@
 import React from 'react';
-import './CssDemo.css'; // Import the CSS file for styles
+import './CssDemo.css';
 
 const CssDemo = () => {
     return (
@@ -19,14 +19,14 @@ const CssDemo = () => {
             <div style={{ height: '400px', border: '1px solid #ccc' }}>
                 <div className="sticky">Sticky Position (sticks to the top when scrolling)</div>
                 <p>Scroll down to see the sticky effect.</p>
-                <p style={{ height: '600px' }}>More content here to enable scrolling.</p>
+                <p style={{ height: '800px' }}>More content here to enable scrolling.</p>
             </div>
 
             <div className="z-index-example">Z-Index Example 1 (lower z-index)</div>
             <div className="z-index-example2">Z-Index Example 2 (higher z-index)</div>
 
             <h2>Links and Buttons</h2>
-            <a href="#">Hover over this link</a><br /><br />
+            <a href="index.html">Hover over this link</a><br /><br />
             <button>Click me</button>
 
             <h2>List with Pseudo-Classes</h2>

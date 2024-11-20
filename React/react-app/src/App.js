@@ -1,19 +1,25 @@
 // src/App.js
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'; // Import necessary components
+import Layout from './pages/Layout';
 import MyFirstComponent from './components/MyFirstComponent';
 import ContactForm from './components/ContactForm';
 import CssDemo from './components/CssDemo';
+import CssVanity from './components/CssVanity';
 
 function App() {
     return (
-        <div className="App">
-            <MyFirstComponent /> {/* Use your first component */}
-            <ContactForm /> {/* Use your form component */}
-            <CssDemo /> {/* Use your CSS demo component */}
-        </div>
+        <Router>
+            <Layout>
+                <Routes>
+                    <Route path="/" element={<MyFirstComponent />} />
+                    <Route path="/ContactForm" element={<ContactForm />} />
+                    <Route path="/CssPositions" element={<CssDemo />} />
+                    <Route path="/CssVanity" element={<CssVanity />} />
+                </Routes>
+            </Layout>
+        </Router>
     );
 }
 
 export default App;
-
