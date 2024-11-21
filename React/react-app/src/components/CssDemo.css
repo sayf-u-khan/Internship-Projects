@@ -64,7 +64,6 @@ body {
     margin: 10px 0;
 }
 
-/* Pseudo-Classes */
 a {
     color: blue;
     text-decoration: none;
@@ -76,8 +75,8 @@ a:hover {
 
 button {
     padding: 10px 15px;
-    background-color: lightgray;
-    border: none;
+    background-color: lightgray !important;
+    border: #000000;
     cursor: pointer;
 }
 
@@ -85,7 +84,6 @@ button:active {
     background-color: darkgray; /* Changes color when clicked */
 }
 
-/* Nth-child example */
 ul li:nth-child(odd) {
     background-color: lightgray ; /* Light gray background for odd items */
 }

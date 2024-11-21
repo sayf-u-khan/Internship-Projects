@@ -6,8 +6,8 @@ body {
     padding: 20px;
 }
 
-h1 {
-    color: #d21313; 
+.h1c {
+    color: #d213b5; 
 }
 
 .box {
@@ -32,5 +32,5 @@ a[target="_blank"] {
 
 .inline {
     display: inline;
-    margin: 0 5px;
+    margin: 0 50px;
 }

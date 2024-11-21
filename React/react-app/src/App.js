@@ -6,6 +6,7 @@ import MyFirstComponent from './components/MyFirstComponent';
 import ContactForm from './components/ContactForm';
 import CssDemo from './components/CssDemo';
 import CssVanity from './components/CssVanity';
+import ImagePage from './components/ImagePage';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/ContactForm" element={<ContactForm />} />
                     <Route path="/CssPositions" element={<CssDemo />} />
                     <Route path="/CssVanity" element={<CssVanity />} />
+                    <Route path="/ImagePage" element={<ImagePage />} />
                 </Routes>
             </Layout>
         </Router>

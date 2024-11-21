@@ -1,0 +1,47 @@
+img {
+    float: right;
+    width: 10%;
+    height: auto;
+    opacity: 70%;
+    z-index: 0;
+    padding-left: 20px;
+  }
+
+  .text p {
+    z-index: 1;
+}
+
+#navlist {
+    position: relative;
+  }
+  
+  #navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+  }
+  
+  #navlist li, #navlist a {
+    height: 30px;
+    display: block;
+  }
+  
+  #park {
+    left: 10px;
+    width: 40px;
+    background: url('/public/images/css_sprites.png') 0 0;
+  }
+  
+  #building {
+    left: 10px;
+    width: 40px;
+    background: url('/public/images/css_sprites.png') -30px 0;
+  }
+  
+  #trees {
+    left: 50px;
+    width: 40px;
+    background: url('/public/images/css_sprites.png') -50px 0;
+  }

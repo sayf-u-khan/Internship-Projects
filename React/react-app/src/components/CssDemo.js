@@ -4,7 +4,7 @@ import './CssDemo.css';
 const CssDemo = () => {
     return (
         <div>
-            <h1>CSS Positioning and Pseudo-Classes Demo</h1>
+            <h1>CSS Positioning</h1>
 
             <div className="static">Static Position</div>
 
@@ -24,19 +24,6 @@ const CssDemo = () => {
 
             <div className="z-index-example">Z-Index Example 1 (lower z-index)</div>
             <div className="z-index-example2">Z-Index Example 2 (higher z-index)</div>
-
-            <h2>Links and Buttons</h2>
-            <a href="index.html">Hover over this link</a><br /><br />
-            <button>Click me</button>
-
-            <h2>List with Pseudo-Classes</h2>
-            <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-                <li>Item 5</li>
-            </ul>
         </div>
     );
 };
