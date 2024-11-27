@@ -27,10 +27,36 @@ a[target="_blank"] {
 
 .block {
     display: block;
-    margin: 60px 0;
+    margin: 60px 60px;
 }
 
 .inline {
     display: inline;
     margin: 0 50px;
+}
+
+.section1 {
+    background: linear-gradient(to right, #ff7e5f, #a9fe7b);
+  }
+
+.hover-effect {
+    transition: box-shadow 0.3s;
+}
+
+.hover-effect:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes gradientAnimation {
+    0% { background-color: #ff7e5f; }
+    50% { background-color: #7bfea0; }
+    100% { background-color: #e25fff; }
+}
+
+.animate {
+    animation: gradientAnimation 10s ease infinite;
+}
+
+.padded-text {
+    padding: 10px 10px;
 }
