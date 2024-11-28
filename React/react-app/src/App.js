@@ -7,6 +7,8 @@ import ContactForm from './components/ContactForm';
 import CssDemo from './components/CssDemo';
 import CssVanity from './components/CssVanity';
 import ImagePage from './components/ImagePage';
+import Login from './components/login'
+import Javascript from './pages/Javascript';
 
 function App() {
     return (
@@ -18,6 +20,8 @@ function App() {
                     <Route path="/CssPositions" element={<CssDemo />} />
                     <Route path="/CssVanity" element={<CssVanity />} />
                     <Route path="/ImagePage" element={<ImagePage />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/javascript" element={<Javascript />} />
                 </Routes>
             </Layout>
         </Router>
