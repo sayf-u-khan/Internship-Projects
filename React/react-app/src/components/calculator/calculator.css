@@ -1,0 +1,53 @@
+.calculator {
+    width: 400px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    background-color: #122925;
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+}
+
+.input {
+    font-size: 24px;
+    margin-bottom: 50px;
+    color: #ebebeb;
+}
+
+.result {
+    font-size: 40px;
+    color: #0fdcbe;
+}
+
+.cbuttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.cbutton {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #b413a1;
+    color: #111010;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.cbutton:hover {
+    color: #e02222;
+}
+
+.clear {
+    grid-column: span 4; /* Make the clear button span all columns */
+    background-color: #263274;
+    color: rgb(161, 34, 34);
+}

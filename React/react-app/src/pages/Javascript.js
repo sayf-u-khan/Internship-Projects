@@ -1,4 +1,4 @@
-function Javascript() {
+function JavaScript() {
     return (
         <div className="javascript">
             <Javascript />
@@ -6,4 +6,4 @@ function Javascript() {
     );
 }
 
-export default Javascript;
+export default JavaScript;

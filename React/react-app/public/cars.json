@@ -1,0 +1,13 @@
+{
+    "availableCars": [
+        "BMW",
+        "Volvo",
+        "Saab",
+        "Ford",
+        "MG",
+        "Audi",
+        "Mercedes",
+        "Toyota",
+        "Tesla"
+    ]
+}
