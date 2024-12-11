@@ -1,7 +1,8 @@
-body {
+.loginbody {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
+    background-image: linear-gradient(to bottom right, #f0f0f0, #e0e0e0);
 }
 
 .logincontainer {
@@ -12,44 +13,59 @@ body {
 }
 
 .login-form {
-    background-color: rgb(242, 239, 239);
+    background-color: rgba(242, 239, 239, 0.9);
     padding: 20px 20px; 
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     width: 400px; 
     box-sizing: border-box; 
+    transition: transform 0.3s ease;
 }
 
-h2 {
+.login-form:hover {
+    transform: scale(1.02);
+}
+
+.loginh2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #9d1919;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 .form-group {
     margin-bottom: 15px;
 }
 
-label {
+.loginlabel {
     display: block;
     margin-bottom: 5px;
+    color: #333;
 }
 
-input {
+.logininput {
     width: calc(100% - 20px); 
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #9d1919;
     border-radius: 3px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #a7019e;
+    outline: none;
 }
 
 .loginbutton {
     width: 100%; 
     padding: 10px;
-    background-color: #bc19c2; 
+    background-color: #9d1919 !important; 
     color: white;
     border: none;
     border-radius: 3px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
 }
 
 .loginbutton:hover {

@@ -1,53 +1,85 @@
 .calculator {
-    width: 400px;
+    width: 300px;
+    height: 550px;
     margin: 50px auto;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    border: 4px solid #000000;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
 }
 
 .display {
-    background-color: #122925;
+    background-color: #020202;
+    border-radius: 20px;
     padding: 20px;
-    border-bottom: 1px solid #ccc;
     text-align: right;
+    flex: 1;
 }
 
 .input {
     font-size: 24px;
-    margin-bottom: 50px;
-    color: #ebebeb;
+    color: #8d8d8d;
+    height: 50px;
 }
 
 .result {
     font-size: 40px;
-    color: #0fdcbe;
+    color: #f8fcfb;
+    height: 50px;
 }
 
-.cbuttons {
+.button-grid {
+    align-items: middle;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr) 1fr;
+    gap: 5px;
+    padding: 10px;
 }
 
-.cbutton {
-    width: 60px;
-    height: 60px;
-    padding: 20px;
-    font-size: 18px;
-    border: 1px solid #b413a1;
-    color: #111010;
+.number-button {
+    width: 65px;
+    height: 65px;
+    font-size: 24px;
+    color: #f4f2f2;
+    background-color: #363535 !important;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 50%; /* Make buttons circular */
+    display: flex; /* Center text */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+
+.operation-button {
+    width: 65px;
+    height: 65px;
+    font-size: 24px;
+    color: #f6f2f2;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #db8412 !important;
+    border-radius: 50%; /* Make buttons circular */
+    display: flex; /* Center text */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+
+.top-row-button {
+    width: 65px;
+    height: 65px;
+    font-size: 24px;
+    color: #f2eeee;
+    background-color: #6f6f6f !important;
     cursor: pointer;
     transition: background-color 0.3s;
     border-radius: 50%;
-    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.cbutton:hover {
-    color: #e02222;
-}
-
-.clear {
-    grid-column: span 4; /* Make the clear button span all columns */
-    background-color: #263274;
-    color: rgb(161, 34, 34);
+.number-button:hover, .operation-button:hover, .top-row-button:hover {
+    transition: background-color 0.3s;
 }

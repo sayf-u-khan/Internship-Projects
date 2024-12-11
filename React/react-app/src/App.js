@@ -10,6 +10,7 @@ import ImagePage from './components/image_page/ImagePage';
 import Login from './components/login_page/login'
 import Javascript from './components/javascript/javascript';
 import Calculator from './components/calculator/calculator';
+import UserProfile from './components/profile/profile-code';
 
 function App() {
     return (
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/javascript" element={<Javascript />} />
                     <Route path="/calculator" element={<Calculator />} />
+                    <Route path="/profile" element={<UserProfile />} />
                 </Routes>
             </Layout>
         </Router>
