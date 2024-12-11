@@ -28,6 +28,10 @@ const Layout = ({ children }) => {
             <main>
                 {children} 
             </main>
+            <footer>
+                <p>Author: Sayf Khan</p>
+                <p><a href="mailto:sayf.khan@sequenx.com">sayf.khan@sequenx.com</a></p>
+            </footer>
         </div>
     );
 };

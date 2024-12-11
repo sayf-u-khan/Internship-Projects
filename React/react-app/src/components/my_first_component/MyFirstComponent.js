@@ -20,10 +20,7 @@ const MyFirstComponent = () => {
             <div>
                 <h1>Hello, World!</h1>
                 <p>This is the homepage!</p>
-            </div></><footer>
-                <p>Author: Sayf Khan</p>
-                <p><a href="mailto:sayf.khan@sequenx.com">sayf.khan@sequenx.com</a></p>
-            </footer>
+            </div></>
             </>
     );
 };

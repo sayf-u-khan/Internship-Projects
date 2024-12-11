@@ -73,7 +73,7 @@ const UserProfile = () => {
                             <ul>{interestList}</ul>
                         </div>
                     </div>
-                    <button onClick={handleEditProfile}>Create Another Profile</button>
+                    <button className={styles.profilebutton} onClick={handleEditProfile}>Create Another Profile</button>
                 </div>
             )}
         </div>
