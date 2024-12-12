@@ -3,7 +3,7 @@ import './CssVanity.css';
 
 const CssVanity = () => {
     return (
-        <div>
+        <div className='layout'>
             <h1 class="h1c">This is the Title</h1>
             <p class="padded-text box">This text is in a box</p>
             <p class="padded-text highlight">This text is highlighted</p>

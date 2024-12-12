@@ -3,7 +3,7 @@ import './CssDemo.css';
 
 const CssDemo = () => {
     return (
-        <div>
+        <div className='layout'>
             <h1>CSS Positioning</h1>
 
             <div className="static">Static Position</div>
@@ -16,10 +16,10 @@ const CssDemo = () => {
 
             <div className="fixed">Fixed Position (remains fixed when scrolling)</div>
 
-            <div style={{ height: '400px', border: '1px solid #ccc' }}>
+            <div style={{ height: '1000px', border: '1px solid #ccc' }}>
                 <div className="sticky">Sticky Position (sticks to the top when scrolling)</div>
                 <p>Scroll down to see the sticky effect.</p>
-                <p style={{ height: '800px' }}>More content here to enable scrolling.</p>
+                <p>More content here to enable scrolling.</p>
             </div>
 
             <div className="z-index-example">Z-Index Example 1 (lower z-index)</div>

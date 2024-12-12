@@ -3,8 +3,7 @@ import './MyFirstComponent.css';
 
 const MyFirstComponent = () => {
     return (
-        <>
-        <>
+        <div className='layout'>
         <article>
             <header>
                 <h1>Intern Project - Frontend Task</h1>
@@ -20,8 +19,8 @@ const MyFirstComponent = () => {
             <div>
                 <h1>Hello, World!</h1>
                 <p>This is the homepage!</p>
-            </div></>
-            </>
+            </div>
+        </div>
     );
 };
 

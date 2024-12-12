@@ -5,7 +5,7 @@ import CssVanity from './components/CssVanity';
 function CssStyles() {
     return (
         <div className="CssStyles">
-            <CssVanity /> {/* Use your first component */}
+            <CssVanity />
         </div>
     );
 }

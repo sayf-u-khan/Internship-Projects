@@ -11,6 +11,7 @@ import Login from './components/login_page/login'
 import Javascript from './components/javascript/javascript';
 import Calculator from './components/calculator/calculator';
 import UserProfile from './components/profile/profile-code';
+import PlotPage from './components/python/plotpage';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                     <Route path="/javascript" element={<Javascript />} />
                     <Route path="/calculator" element={<Calculator />} />
                     <Route path="/profile" element={<UserProfile />} />
+                    <Route path='/python' element={<PlotPage />} />
                 </Routes>
             </Layout>
         </Router>
