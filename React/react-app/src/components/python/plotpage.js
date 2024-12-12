@@ -22,7 +22,7 @@ const PlotPage = () => {
 
     return (
         <div>
-            <h1>Iris Sepal Length vs Width Plot</h1>
+            <h2>Iris Sepal Length vs Width Plot</h2>
             {plotUrl ? (
                 <img src={plotUrl} alt="Iris Plot" />
             ) : (

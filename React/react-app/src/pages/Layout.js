@@ -23,6 +23,7 @@ const Layout = ({ children }) => {
                     </li>
                     <li class='li1'><Link to="/Calculator">Calculator</Link></li>
                     <li class='li1'><Link to="/Profile">Profile</Link></li>
+                    <li class='li1'><Link to="/python">Python</Link></li>
                 </ul>
             </nav>
             <main>
