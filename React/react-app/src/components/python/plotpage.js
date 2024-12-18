@@ -22,9 +22,9 @@ const PlotPage = () => {
 
     return (
         <div>
-            <h2>Iris Sepal Length vs Width Plot</h2>
+            <h2>Goodmayes vs Chadwell Heath Station Daily Traffic</h2>
             {plotUrl ? (
-                <img src={plotUrl} alt="Iris Plot" />
+                <img src={plotUrl} alt="Station Plot" />
             ) : (
                 <p>Loading plot...</p>
             )}

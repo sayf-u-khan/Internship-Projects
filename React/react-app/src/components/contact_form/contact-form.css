@@ -4,7 +4,7 @@
     padding: 20px;
     border: 2px solid #e63946;
     border-radius: 10px;
-    background-color: #f1faee;
+    background-color: #faeeee;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -31,7 +31,7 @@
 .form-textarea {
     width: calc(100% - 20px);
     padding: 10px;
-    border: 1px solid #a8dadc;
+    border: 1px solid #efcfc7;
     border-radius: 5px;
     transition: border-color 0.3s;
 }
@@ -51,8 +51,8 @@
 .form-button {
     width: 100%;
     padding: 10px;
-    background-color: #f1faee;
-    color: #e63946;
+    background-color: #bd2424 !important;
+    color: #ffffff;
     border: 2px solid #e63946; 
     border-radius: 5px;
     cursor: pointer;
@@ -60,8 +60,9 @@
 }
 
 .form-button:hover {
-    background-color: #e63946;
+    background-color: #fa3b4b !important;
     color: white;
+    
 }
 
 .easter-egg-message {
