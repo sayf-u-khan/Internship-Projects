@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import io
 import numpy as np
+import pandas as pd
+import os
 
 app = FastAPI()
 
@@ -32,22 +34,33 @@ async def read_item(item_id: int, q: str = None):
 @app.get("/plot")
 async def get_plot():
 
-    data = sns.load_dataset("iris")
+    data = pd.read_csv('C:/Users/sayfk/Intern Projects/FastAPI/app/assets/GDYCHA.csv')
+    
+    # DataFrame
+    data = pd.DataFrame(data)
 
-    plt.figure(figsize=(8, 6))
-    sns.scatterplot(data=data, x="sepal_length", y="sepal_width", hue="species")
-    plt.title("Iris Sepal Length vs Width")
-    plt.xlabel("Sepal Length")
-    plt.ylabel("Sepal Width")
+    # Convert TravelDate to datetime format
+    data['TravelDate'] = pd.to_datetime(data['TravelDate'], format='%Y%m%d')
+
+    # Melt the DataFrame to long format
+    data_melt = data.melt(id_vars='TravelDate', var_name='Station', value_name='TravelNumbers')
+
+    # Create the plot
+    plt.figure(figsize=(10, 6))
+    sns.lineplot(data=data_melt, x='TravelDate', y='TravelNumbers', hue='Station', marker='o', linewidth=1, palette='Set1', style='Station', dashes=False, alpha=0.5)
+    plt.title('Travel Numbers Over Time')
+    plt.xlabel('Travel Date')
+    plt.ylabel('Number of Travelers')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
 
     buf = io.BytesIO()
     plt.savefig(buf, format='png')
-    buf.seek(0) 
+    buf.seek(0)
     plt.close()
 
     return StreamingResponse(buf, media_type="image/png")
 
-# This is code that displays when a button is pressed in react
 
 @app.get("/code")
 async def exec_message():
@@ -80,8 +93,8 @@ async def analyse_data(data: list[float]):
     plt.figure(figsize=(8, 4))
     plt.scatter(x, y, color='blue', label='Data Points')
     plt.plot(x, y_fit, color='red', label='Line of Best Fit')
-    plt.axhline(y=mean, color='green', linestyle='--', label='Mean')
-    plt.axhline(y=median, color='purple', linestyle='--', label='Median')
+    plt.graphhline(y=mean, color='green', linestyle='--', label='Mean')
+    plt.graphhline(y=median, color='purple', linestyle='--', label='Median')
     plt.title('Scatter Plot with Line of Best Fit')
     plt.xlabel('Index')
     plt.ylabel('Value')
