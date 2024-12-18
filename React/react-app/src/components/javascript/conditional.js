@@ -6,7 +6,6 @@ const CarAvailability = () => {
     const [message, setMessage] = useState("");
 
     useEffect(() => {
-        // Fetch available cars from the JSON file
         fetch('/cars.json')
             .then(response => response.json())
             .then(data => {
@@ -18,7 +17,6 @@ const CarAvailability = () => {
     }, []);
 
     useEffect(() => {
-        // Check if the car is available
         if (availableCars.includes(carToCheck)) {
             setMessage(`${carToCheck} is available!`);
         } else {

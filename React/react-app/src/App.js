@@ -1,6 +1,5 @@
-// src/App.js
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'; // Import necessary components
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Layout from './pages/Layout';
 import MyFirstComponent from './components/my_first_component/MyFirstComponent';
 import ContactForm from './components/contact_form/ContactForm';

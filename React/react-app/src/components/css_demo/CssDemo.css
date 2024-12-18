@@ -5,52 +5,46 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Static Position */
 .static {
     background-color: lightblue;
     padding: 20px;
     margin: 10px 0;
 }
 
-/* Relative Position */
 .relative {
     position: relative;
     background-color: lightgreen;
     padding: 20px;
     margin: 10px 0;
-    top: 10px; /* Moves down 10px */
+    top: 10px;
 }
 
-/* Absolute Position */
 .absolute {
     position: absolute;
     background-color: lightcoral;
     padding: 20px;
-    top: 100px; /* 100px from the top of the nearest positioned ancestor */
-    left: 50px; /* 50px from the left */
+    top: 100px;
+    left: 50px;
 }
 
-/* Fixed Position */
 .fixed {
     position: fixed;
     background-color: lightgoldenrodyellow;
     padding: 20px;
-    top: 10px; /* Sticks to the top of the viewport */
-    right: 10px; /* Sticks to the right of the viewport */
+    top: 10px;
+    right: 10px;
 }
 
-/* Sticky Position */
 .sticky {
     position: sticky;
     background-color: lightpink;
     padding: 20px;
-    top: 0; /* Sticks to the top of its container */
+    top: 0;
 }
 
-/* Z-Index Example */
 .z-index-example {
     position: relative;
-    z-index: 1; /* Stacks behind the next element */
+    z-index: 1;
     background-color: skyblue;
     padding: 20px;
     margin: 10px 0;
@@ -58,7 +52,7 @@ body {
 
 .z-index-example2 {
     position: relative;
-    z-index: 2; /* Stacks in front of the previous element */
+    z-index: 2;
     background-color: coral;
     padding: 20px;
     margin: 10px 0;
@@ -70,7 +64,7 @@ a {
 }
 
 a:hover {
-    color: red; /* Changes color on hover */
+    color: red;
 }
 
 button {
@@ -81,13 +75,5 @@ button {
 }
 
 button:active {
-    background-color: darkgray; /* Changes color when clicked */
-}
-
-ul li:nth-child(odd) {
-    background-color: lightgray ; /* Light gray background for odd items */
-}
-
-ul li:nth-child(even) {
-    background-color: #ffffff; /* White background for even items */
+    background-color: darkgray;
 }

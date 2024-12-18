@@ -51,17 +51,17 @@
 .form-button {
     width: 100%;
     padding: 10px;
-    background-color: #f1faee; /* Soft light background for the button */
-    color: #e63946; /* Bold red text */
-    border: 2px solid #e63946; /* Red border */
+    background-color: #f1faee;
+    color: #e63946;
+    border: 2px solid #e63946; 
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .form-button:hover {
-    background-color: #e63946; /* Red background on hover */
-    color: white; /* White text on hover */
+    background-color: #e63946;
+    color: white;
 }
 
 .easter-egg-message {

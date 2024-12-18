@@ -4,8 +4,6 @@ const CarCategoriser = () => {
     const [carInput, setCarInput] = useState('');
     const [carTypeCounts, setCarTypeCounts] = useState(new Map());
     const [message, setMessage] = useState('');
-
-    // Effect to categorise cars whenever carInput changes
     useEffect(() => {
         if (carInput) {
             const carList = carInput.split(',').map(car => car.trim());
@@ -36,17 +34,17 @@ const CarCategoriser = () => {
 
                     default:
                         unknownCars.push(car);
-                        continue; // Skip to the next iteration
+                        continue;
                 }
             }
 
             setCarTypeCounts(counts);
             setMessage(unknownCars.length > 0 ? `Unknown car types: ${unknownCars.join(', ')}` : '');
         } else {
-            setCarTypeCounts(new Map()); // Reset counts if input is empty
+            setCarTypeCounts(new Map());
             setMessage('');
         }
-    }, [carInput]); // Run this effect when carInput changes
+    }, [carInput]);
 
     return (
         <div>

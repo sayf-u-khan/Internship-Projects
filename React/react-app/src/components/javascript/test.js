@@ -2,10 +2,8 @@ import {useEffect} from "react";
 
 const Test1 = () => {
     useEffect(() => {
-        // Define the displayCars function inside the useEffect
         const displayCars = () => {
-            // Fetch available cars from the JSON file
-            fetch('/cars.json') // Ensure this path is correct
+            fetch('/cars.json')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
@@ -13,16 +11,16 @@ const Test1 = () => {
                     return response.json();
                 })
                 .then(data => {
-                    const cars = data.availableCars; // Get the car list from the JSON data
-                    const text = cars.join("<br>"); // Join car names with line breaks
-                    document.getElementById("carList").innerHTML = text; // Insert into the DOM
+                    const cars = data.availableCars;
+                    const text = cars.join("<br>");
+                    document.getElementById("carList").innerHTML = text;
                 })
                 .catch(error => {
                     console.error('Error fetching car data:', error);
                 });
         };
 
-        displayCars(); // Call the function when the component mounts
+        displayCars();
     }, []);
 
     return (

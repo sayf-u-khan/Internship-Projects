@@ -8,12 +8,12 @@ const UserProfile = () => {
     const [interests, setInterests] = useState('');
     const [image, setImage] = useState('');
     const [showProfile, setShowProfile] = useState(false);
-    const [formVisible, setFormVisible] = useState(true); // New state variable
+    const [formVisible, setFormVisible] = useState(true);
 
     const handleSubmit = (event) => {
         event.preventDefault();
         setShowProfile(true);
-        setFormVisible(false); // Hide the form after generating the profile
+        setFormVisible(false);
     };
 
     const interestList = interests.split(',').map((interest, index) => (
@@ -21,7 +21,6 @@ const UserProfile = () => {
     ));
 
     const handleEditProfile = () => {
-        // Reset the form and show it again
         setName('');
         setTitle('');
         setBio('');
