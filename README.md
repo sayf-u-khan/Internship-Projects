@@ -126,7 +126,9 @@ This repository contains projects developed during my internship at SeQuenX. It 
 
 2. **API Design**:
    - Endpoints:
-     - `GET /plot HTTP/1.1`: Performs server-side computations and returns a plot of the results.
+     - `GET /plot HTTP/`: Performs server-side computations and returns a plot of the results.
+     - `GET /code HTTP/`: When a button is pressed on the frontend, a message is displayed generated from the backend.
+     - `POST /analyse-data HTTP/`: User inputted string of numbers will get analysed with python and then return some light analysis and a graph of the data.
 
 3. **Development Setup**:
    - Install dependencies: `pip install -r requirements.txt`
