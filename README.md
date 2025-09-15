@@ -1,7 +1,9 @@
 # Internship Projects - Comprehensive Documentation
 
+[Project Status: Completed] | [Role: Software Development & Data Analysis Intern]
+
 ## Overview
-This repository contains projects developed during my internship at SeQuenX. It showcases a collection of applications, including:
+As part of a 7-month internship with SeQuenX B.V., I independently developed a full-stack web application and RESTful API. The project involved end-to-end development, from database design and backend logic to frontend user interface creation and cloud deployment. This project showcases skills in Python, Django, SQL, and Agile project management. It showcases a collection of applications, including:
 
 - A Django-powered backend for user management and API capabilities.
 - A React-based frontend app providing a responsive user interface.
